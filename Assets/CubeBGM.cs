@@ -19,12 +19,14 @@ public class CubeBGM : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        //unityタグがあった場合、SE音を鳴らす
         if (collision.gameObject.tag == "unity")
         {
 
         }
         else
         {
+            //SE音を鳴らす
             GetComponent<AudioSource>().Play();
         }
 
@@ -34,3 +36,4 @@ public class CubeBGM : MonoBehaviour {
 
 
 }
+
